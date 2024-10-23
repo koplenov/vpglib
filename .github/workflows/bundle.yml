@@ -10,6 +10,9 @@ jobs:
     
     - name: test file
       run: |
+        wget https://get.enterprisedb.com/postgresql/postgresql-17.0-1-windows-x64-binaries.zip
+        unzip postgresql-17.0-1-windows-x64-binaries.zip
+        ls
         mkdir pg
         cd pg
         echo asdasd > test.txt
