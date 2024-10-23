@@ -14,7 +14,7 @@ jobs:
         unzip postgresql-17.0-1-windows-x64-binaries.zip
         # ectracted to pgsql folder
         mkdir pg
-        cp pgsql/include/libpq pg
+        cp -r pgsql/include/libpq pg
         cp pgsql/include/libpq-fe.h pg/libpq
         cp pgsql/include/pg_config_ext.h pg/libpq
         cp pgsql/include/pg_config.h pg/libpq
