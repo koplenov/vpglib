@@ -10,9 +10,8 @@ jobs:
     
     - name: test file
       run: |
-        export version=16.4-2
-        wget 'https://get.enterprisedb.com/postgresql/postgresql-${version}-windows-x64-binaries.zip'
-        unzip postgresql-${version}-windows-x64-binaries.zip
+        wget 'https://get.enterprisedb.com/postgresql/postgresql-16.4-2-windows-x64-binaries.zip'
+        unzip postgresql-16.4-2-windows-x64-binaries.zip
         # ectracted to pgsql folder
         mkdir pg
         cp -r pgsql/include/libpq pg
