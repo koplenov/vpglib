@@ -8,10 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - uses: hyoo-ru/mam_build@master2
-      with:
-        package: 'hyoo/lupa'
-
     - name: test file
       run: |
         mkdir pg
